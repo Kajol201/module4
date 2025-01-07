@@ -1,0 +1,14 @@
+header{
+    
+    width:800px;
+    margin:0 auto;
+    
+}
+main{
+    background-color: bisque;
+    width:800px;
+    margin:0 auto;
+}
+section form > label{
+    display: block;
+}
