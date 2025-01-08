@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop down menu</title>
+    <style>
+        nav>ul {
+            display: flex;
+            justify-content: space-around;
+            background-color: lightyellow;
+
+        }
+
+        nav li {
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        nav li:hover {
+            background-color: lightgray;
+        }
+
+        nav li a {
+            text-decoration: none;
+        }
+
+        nav li .drop-down {
+            display: none;
+        }
+
+        nav li {
+            position: relative;
+        }
+
+        nav li:hover .drop-down {
+            display: block;
+            position: absolute;
+            left: -20px;
+            top: 35px;
+
+        }
+
+        nav li .drop-down li a {}
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tutorial</a></li>
+                    <li><a href="#">Contact</a>
+                        <ul class="drop-down">
+                            <li><a href="#">FaceBook</a></li>
+                            <li><a href="#">Email</a></li>
+                            <li><a href="#">Whatsapp</a></li>
+                            <li><a href="#">Instragram</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+</body>
+
+</html>
